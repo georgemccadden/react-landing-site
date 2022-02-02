@@ -1,11 +1,20 @@
-// Create the h1 element
-var h1 = document.createElement("H1");
+const landingPage = (
+  <div>
+    <img
+      src="react-logo.png"
+      width="40"
+      height="40"
+      alt="A blue atom with three blue rings around a solid blue nucleus"
+    ></img>
+    <h1>Fun facts about React</h1>
+    <ul>
+      <li>Was first released in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has well over 100K stars on Github</li>
+      <li>Is maintained by Facebook</li>
+      <li>Powers thousands of enterprise apps, including mobile apps</li>
+    </ul>
+  </div>
+);
 
-// Create the text element with the text you want to display in the h1
-var text = document.createTextNode("Here is my H1 text");
-
-// Append the text node to the h1 element
-h1.appendChild(text);
-
-// Append the h1 element to the document body to display its contents
-document.body.appendChild(h1);
+ReactDOM.render(landingPage, document.getElementById("root"));
