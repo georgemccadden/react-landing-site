@@ -1,20 +1,21 @@
-const landingPage = (
-  <div>
-    <img
-      src="react-logo.png"
-      width="40"
-      height="40"
-      alt="A blue atom with three blue rings around a solid blue nucleus"
-    ></img>
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>Was first released in 2013</li>
-      <li>Was originally created by Jordan Walke</li>
-      <li>Has well over 100K stars on Github</li>
-      <li>Is maintained by Facebook</li>
-      <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-  </div>
-);
+function LandingPage() {
+  return (
+    <div>
+      <img
+        src="react-logo.png"
+        alt="blue atom with four rings surrounding a blue nucleus"
+        width="50"
+        height="50"
+      />
+      <h1>Reasons why I'm excited to learn React :</h1>
+      <ul>
+        <li>It was created and is maintained by Facebook</li>
+        <li>I will become a better front-end developer</li>
+        <li>Prospective jobs will become more available to me</li>
+        <li>I'll be able to build anything I can think of more easily</li>
+      </ul>
+    </div>
+  );
+}
 
-ReactDOM.render(landingPage, document.getElementById("root"));
+ReactDOM.render(<LandingPage />, document.getElementById("root"));
