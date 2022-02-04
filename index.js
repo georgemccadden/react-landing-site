@@ -1,13 +1,18 @@
 function Header() {
   return (
     <div>
-      <nav>
+      <nav className="nav">
         <img
           src="react-logo.png"
           alt="blue atom with four rings surrounding a blue nucleus"
           width="60"
           height="60"
         />
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </div>
   );
