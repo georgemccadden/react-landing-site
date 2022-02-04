@@ -30,14 +30,21 @@ function MainContent() {
   );
 }
 
+function Footer() {
+  return (
+    <div>
+      <footer>
+        <small>© 2022 Lathan development. All rights reserved.</small>
+      </footer>
+    </div>
+  );
+}
+
 function LandingPage() {
   return (
     <div>
       <Header />
       <MainContent />
-      <footer>
-        <small>© 2022 Lathan development. All rights reserved.</small>
-      </footer>
     </div>
   );
 }
